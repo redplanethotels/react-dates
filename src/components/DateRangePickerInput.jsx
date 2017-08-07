@@ -172,18 +172,6 @@ export default class DateRangePickerInput extends React.Component {
           'DateRangePickerInput--rtl': isRTL,
         })}
       >
-        {(showDefaultInputIcon || customInputIcon !== null) && (
-          <button
-            type="button"
-            className="DateRangePickerInput__calendar-icon"
-            disabled={disabled}
-            aria-label={phrases.focusStartDate}
-            onClick={onArrowDown}
-          >
-            {inputIcon}
-          </button>
-        )}
-
         <DateInput
           id={startDateId}
           placeholder={startDatePlaceholderText}
@@ -196,6 +184,7 @@ export default class DateRangePickerInput extends React.Component {
           required={required}
           readOnly={readOnly}
           showCaret={showCaret}
+          showDefaultInputIcon={showDefaultInputIcon}
 
           onChange={onStartDateChange}
           onFocus={onStartDateFocus}
@@ -224,6 +213,7 @@ export default class DateRangePickerInput extends React.Component {
           required={required}
           readOnly={readOnly}
           showCaret={showCaret}
+          showDefaultInputIcon={showDefaultInputIcon}
 
           onChange={onEndDateChange}
           onFocus={onEndDateFocus}

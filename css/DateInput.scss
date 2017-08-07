@@ -2,18 +2,24 @@ $caret-top: $react-dates-spacing-vertical-picker - $react-dates-width-tooltip-ar
 
 .DateInput {
   // font
+  float: left;
   font-weight: 200;
   font-size: 18px;
   line-height: 24px;
   color: $react-dates-color-placeholder-text;
-  margin: 0;
-  padding: 8px;
+  margin: 0 15px 0 0;
 
   background: $react-dates-color-white;
   position: relative;
-  display: inline-block;
-  width: $react-dates-width-input;
+  display: table;
+  width: 48%;
+  height: 58px;
   vertical-align: middle;
+  border-radius: 63px;
+}
+
+.DateInput:last-child {
+  margin-right: 0;
 }
 
 .DateInput--with-caret::before,
@@ -50,6 +56,7 @@ $caret-top: $react-dates-spacing-vertical-picker - $react-dates-width-tooltip-ar
   border: 0;
   height: 100%;
   width: 100%;
+  border-radius: 63px;
 
   &[readonly] {
     -moz-user-select: none;
@@ -59,21 +66,33 @@ $caret-top: $react-dates-spacing-vertical-picker - $react-dates-width-tooltip-ar
   }
 }
 
+.DateInput__input-icon {
+  display: table-cell;
+  width: 40px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
 .DateInput__display-text {
-  padding: 4px 8px;
+  display: table-cell;
+  padding: 15px 0;
+  border-top-right-radius: 63px;
+  border-bottom-right-radius: 63px;
+  float: left;
+  width: 100%;
+  height: 58px;
   white-space: nowrap;
   overflow: hidden;
+  color: #000;
 }
 
 .DateInput__display-text--has-input {
-  color: $react-dates-color-text;
+  color: #000;
 }
 
 .DateInput__display-text--focused {
-  background: $react-dates-color-focus;
-  border-color: $react-dates-color-focus;
-  border-radius: 3px;
-  color: $react-dates-color-text-focus;
+  border: 1px solid #4d90fe;
+  box-shadow: 1px 1px 7px #4d90fe;
 }
 
 .DateInput__display-text--disabled {
