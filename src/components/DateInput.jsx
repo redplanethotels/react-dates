@@ -4,7 +4,6 @@ import { forbidExtraProps } from 'airbnb-prop-types';
 import cx from 'classnames';
 import throttle from 'lodash/throttle';
 import isTouchDevice from 'is-touch-device';
-import CalendarIcon from '../svg/calendar.svg';
 
 const propTypes = forbidExtraProps({
   id: PropTypes.string.isRequired,
@@ -18,6 +17,7 @@ const propTypes = forbidExtraProps({
   readOnly: PropTypes.bool,
   showCaret: PropTypes.bool,
   showDefaultInputIcon: PropTypes.bool,
+  inputIcon: PropTypes.node,
 
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
@@ -42,6 +42,7 @@ const defaultProps = {
   readOnly: null,
   showCaret: false,
   showDefaultInputIcon: true,
+  inputIcon: null,
 
   onChange() {},
   onFocus() {},
@@ -149,9 +150,9 @@ export default class DateInput extends React.Component {
       required,
       readOnly,
       showDefaultInputIcon,
+      inputIcon,
     } = this.props;
 
-    const inputIcon = (<CalendarIcon />);
     const displayText = displayValue || inputValue || dateString || placeholder || '';
     const value = inputValue || displayValue || dateString || '';
     const screenReaderMessageId = `DateInput__screen-reader-message-${id}`;

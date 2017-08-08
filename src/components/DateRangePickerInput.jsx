@@ -185,6 +185,7 @@ export default class DateRangePickerInput extends React.Component {
           readOnly={readOnly}
           showCaret={showCaret}
           showDefaultInputIcon={showDefaultInputIcon}
+          inputIcon={inputIcon}
 
           onChange={onStartDateChange}
           onFocus={onStartDateFocus}
@@ -214,6 +215,7 @@ export default class DateRangePickerInput extends React.Component {
           readOnly={readOnly}
           showCaret={showCaret}
           showDefaultInputIcon={showDefaultInputIcon}
+          inputIcon={inputIcon}
 
           onChange={onEndDateChange}
           onFocus={onEndDateFocus}
