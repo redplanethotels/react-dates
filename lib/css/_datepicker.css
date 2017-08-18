@@ -447,8 +447,8 @@
 
 .DateInput {
   float: left;
-  font-weight: 200;
-  font-size: 18px;
+  font-weight: inherit;
+  font-size: inherit;
   line-height: 24px;
   color: #757575;
   margin: 0 15px 0 0;
