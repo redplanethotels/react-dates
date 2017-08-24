@@ -456,9 +456,9 @@
   position: relative;
   display: table;
   width: 48%;
-  height: 58px;
+  height: 50px;
   vertical-align: middle;
-  border-radius: 25px; }
+  border-radius: 20px; }
 
 .DateInput:last-child {
   margin-right: 0; }
@@ -509,11 +509,11 @@
 
 .DateInput__display-text {
   display: table-cell;
-  padding: 17px 0;
-  border-top-right-radius: 63px;
-  border-bottom-right-radius: 63px;
+  padding: 13px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   float: left;
-  width: 100%;
+  width: 99%;
   height: 22px;
   white-space: nowrap;
   overflow: hidden;
