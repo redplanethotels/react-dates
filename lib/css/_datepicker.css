@@ -524,8 +524,8 @@
   color: #000; }
 
 .DateInput__display-text--focused {
-  border-color: #4d90fe;
-  box-shadow: 1px 1px 7px #4d90fe; }
+  border-color: #888;
+  box-shadow: 1px 1px 7px #888; }
 
 .DateInput__display-text--disabled {
   font-style: italic; }
